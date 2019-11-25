@@ -23,10 +23,10 @@ public class TwoSumSolutionTest
         if (ints != null){
             for (int anInt : ints)
             {
-                System.out.println("下标:" + anInt + " 值:" + nums[anInt]);
+                System.out.println("index:" + anInt + " value:" + nums[anInt]);
             }
         }else{
-            System.out.println("没有符合预期的值！");
+            System.out.println("the expected value was not find ！");
         }
 
 
