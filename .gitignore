@@ -1,0 +1,20 @@
+.idea
+
+# Maven
+target/
+.mvn/
+
+# STS
+.springBeans
+.idea
+*.iml
+target
+/*.iml
+*.DS_Store
+*.jar
+*.mvn
+*mvnw
+*.cmd
+cloud-platform-ui/node_modules
+
+
