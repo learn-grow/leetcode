@@ -39,9 +39,4 @@ public class IsPalindromeSolution {
 
         return true;
     }
-
-
-    public static void main(String args[]){
-        System.out.println(5/2);
-    }
 }
