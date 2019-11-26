@@ -13,7 +13,7 @@ public class LengthOfLongestSubstringSolutionTest {
     public void lengthOfLongestSubstringTest(){
         LengthOfLongestSubstringSolution lengthOfLongestSubstringSolution = new LengthOfLongestSubstringSolution();
 
-        int ans = lengthOfLongestSubstringSolution.lengthOfLongestSubstring("abcabdd");
+        int ans = lengthOfLongestSubstringSolution.lengthOfLongestSubstring("abcdfrghjadad;aglkjgakga;kga'gal");
         System.out.println("the string length is :" + ans);
 
     }
