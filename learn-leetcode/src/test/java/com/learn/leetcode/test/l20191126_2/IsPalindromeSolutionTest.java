@@ -12,9 +12,9 @@ public class IsPalindromeSolutionTest {
     @Test
     public void isPalindrome(){
         IsPalindromeSolution isPalindromeSolution = new IsPalindromeSolution();
-        ;
 
         System.out.println(isPalindromeSolution.isPalindrome(121));
 
     }
+
 }

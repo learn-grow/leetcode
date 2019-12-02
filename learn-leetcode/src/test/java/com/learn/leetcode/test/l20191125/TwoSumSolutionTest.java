@@ -25,7 +25,10 @@ public class TwoSumSolutionTest {
         } else {
             System.out.println("the expected value was not find ！");
         }
-
-
     }
+
+    public static void main(String args[]){
+        System.out.println("42-42".matches("^([5-9]|\\d{2})-\\d*$"));
+    }
+
 }
