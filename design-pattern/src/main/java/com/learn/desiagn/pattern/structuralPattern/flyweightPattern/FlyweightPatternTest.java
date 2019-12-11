@@ -15,6 +15,6 @@ public class FlyweightPatternTest {
         IFlyweight f1 = FlyweightFactory.getFlyweight("a");
         IFlyweight f2 = FlyweightFactory.getFlyweight("b");
         f1.operation("a");
-        f2.operation("b");
+        f2.operation("a");
     }
 }
