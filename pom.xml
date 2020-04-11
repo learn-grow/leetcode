@@ -12,6 +12,7 @@
     <modules>
         <module>learn-leetcode</module>
         <module>design-pattern</module>
+        <module>distributed-lock</module>
     </modules>
 
     <build>
