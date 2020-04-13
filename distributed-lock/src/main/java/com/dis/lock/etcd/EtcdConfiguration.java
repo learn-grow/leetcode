@@ -1,6 +1,6 @@
 package com.dis.lock.etcd;
 
-import io.etcd.jetcd.Client;
+//import io.etcd.jetcd.Client;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,12 +13,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class EtcdConfiguration {
 
-    @Value("etcd.url")
+    @Value("${etcd.url}")
     private String etcdUrl;
 
-    @Bean
-    public Client etcdClient(){
-        Client client = Client.builder().endpoints(etcdUrl).build();
-        return client;
-    }
+//    @Bean
+//    public Client etcdClient(){
+//        Client client = Client.builder().endpoints(etcdUrl).build();
+//        return client;
+//    }
 }

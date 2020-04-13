@@ -11,5 +11,6 @@
 
     <artifactId>design-pattern</artifactId>
 
+    <dependencyManagement></dependencyManagement>
 
 </project>

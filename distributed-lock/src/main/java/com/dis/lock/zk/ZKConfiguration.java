@@ -6,6 +6,7 @@ import org.apache.zookeeper.ZooKeeper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.io.IOException;
@@ -21,12 +22,13 @@ public class ZKConfiguration {
 
     private static final Logger logger = LoggerFactory.getLogger(ZKConfiguration.class);
 
-    @Value("zookeeper.host")
+    @Value("${zookeeper.host}")
     private String zkHost;
 
-    @Value("zookeeper.timeout")
+    @Value("${zookeeper.timeout}")
     private int timeout;
 
+    @Bean
     public ZooKeeper zkClient(){
         ZooKeeper zooKeeper = null ;
         final CountDownLatch countDownLatch = new CountDownLatch(1);

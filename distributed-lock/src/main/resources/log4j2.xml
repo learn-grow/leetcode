@@ -28,9 +28,9 @@
         <property name="info_max">10</property>
 
         <!-- Warn日志默认存放路径(Warn级别日志) -->
-        <property name="warn_fileName">D://warn.log</property>
+        <property name="warn_fileName">./logs/warn.log</property>
         <!-- Warn日志默认压缩路径,将超过指定文件大小的日志,自动存入按"年月"建立的文件夹下面并进行压缩,作为存档 -->
-        <property name="warn_filePattern">D://%d{yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log.gz</property>
+        <property name="warn_filePattern">./logs/%d{yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log.gz</property>
         <!-- Warn日志默认同一文件夹下可以存放的数量,不设置此属性则默认为7个 -->
         <property name="warn_max">10</property>
 

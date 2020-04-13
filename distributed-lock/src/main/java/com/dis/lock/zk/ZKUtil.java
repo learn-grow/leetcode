@@ -109,6 +109,9 @@ public class ZKUtil {
      */
     public List<String> getChildrens(String path){
         try {
+            if (null == exists(path, false)) {
+                return null;
+            }
             return zkClient.getChildren(path ,false);
         } catch (Exception e) {
             logger.info("zk getChildrens is error:{}" , e);
@@ -134,19 +137,18 @@ public class ZKUtil {
     }
 
     /**
-     * 创建持久化节点
+     * 创建临时顺序节点
      * @param path
      * @param data
      * @return
      */
-    public boolean createEphNode(String path , String data){
+    public String createEphNode(String path , String data){
         try{
-            zkClient.create(path , data.getBytes() , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
-            return true;
+            return zkClient.create(path , data.getBytes() , ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
         }catch (Exception e){
             logger.info("create EPHEMERAL is error:{}" , e);
         }
-        return false;
+        return "";
     }
 
 
