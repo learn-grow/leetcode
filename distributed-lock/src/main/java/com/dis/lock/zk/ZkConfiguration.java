@@ -18,9 +18,9 @@ import java.util.concurrent.CountDownLatch;
  * @remark: the ZookeeperConfiguration is 连接zk server
  */
 @Configuration
-public class ZKConfiguration {
+public class ZkConfiguration {
 
-    private static final Logger logger = LoggerFactory.getLogger(ZKConfiguration.class);
+    private static final Logger logger = LoggerFactory.getLogger(ZkConfiguration.class);
 
     @Value("${zookeeper.host}")
     private String zkHost;

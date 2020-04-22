@@ -16,5 +16,7 @@ target
 *mvnw
 *.cmd
 cloud-platform-ui/node_modules
+*log
+log/
 
 

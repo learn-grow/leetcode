@@ -13,6 +13,7 @@
         <module>learn-leetcode</module>
         <module>design-pattern</module>
         <module>distributed-lock</module>
+        <module>netty-server</module>
     </modules>
 
     <build>

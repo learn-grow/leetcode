@@ -120,6 +120,4 @@ public class RedisUtil {
         List<String> list = Arrays.asList(key);
         return stringRedisTemplate.execute(redisScriptDel, list);
     }
-
-
 }

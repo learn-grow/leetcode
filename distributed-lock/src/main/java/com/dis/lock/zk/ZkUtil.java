@@ -15,10 +15,11 @@ import java.util.List;
  * @remark: the ZKUtil is
  */
 @Component
-public class ZKUtil {
+public class ZkUtil {
 
-    private static final Logger logger = LoggerFactory.getLogger(ZKUtil.class);
+    private static final Logger logger = LoggerFactory.getLogger(ZkUtil.class);
     private static final int VERSION = -1;
+
     @Autowired
     private ZooKeeper zkClient;
 
@@ -28,13 +29,16 @@ public class ZKUtil {
      * @param needWatch 复用zookeeper中默认的watcher
      * @return
      */
-    public Stat exists(String path , boolean needWatch){
+    public boolean exists(String path , boolean needWatch){
         try {
-            return zkClient.exists(path , needWatch);
+            Stat stat = zkClient.exists(path , needWatch);
+            if (stat != null){
+                return true;
+            }
         } catch (Exception e) {
             logger.info("exists zk path is error:{}" , e);
         }
-        return null;
+        return false;
     }
 
     /**
@@ -109,7 +113,7 @@ public class ZKUtil {
      */
     public List<String> getChildrens(String path){
         try {
-            if (null == exists(path, false)) {
+            if (exists(path, false)) {
                 return null;
             }
             return zkClient.getChildren(path ,false);
@@ -150,8 +154,5 @@ public class ZKUtil {
         }
         return "";
     }
-
-
-
 
 }
