@@ -11,6 +11,20 @@
 
     <artifactId>design-pattern</artifactId>
 
-    <dependencyManagement></dependencyManagement>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.33</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
 
 </project>
