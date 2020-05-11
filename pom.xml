@@ -14,6 +14,7 @@
         <module>design-pattern</module>
         <module>distributed-lock</module>
         <module>netty-server</module>
+        <module>ioc-overview</module>
     </modules>
 
     <properties>
