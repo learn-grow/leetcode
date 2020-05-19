@@ -15,6 +15,7 @@
         <module>distributed-lock</module>
         <module>netty-server</module>
         <module>ioc-overview</module>
+        <module>signal-demo</module>
     </modules>
 
     <properties>

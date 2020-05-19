@@ -1,6 +1,5 @@
 package com.learn.desiagn.pattern.behavioralPattern.visitorPattern;
 
-import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.Visitor;
 import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.impl.ElementA;
 import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.impl.ElementB;
 import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.impl.VisitorA;

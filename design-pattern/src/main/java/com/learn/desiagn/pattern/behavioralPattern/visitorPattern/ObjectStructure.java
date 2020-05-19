@@ -1,7 +1,6 @@
 package com.learn.desiagn.pattern.behavioralPattern.visitorPattern;
 
 import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.Element;
-import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.Visitor;
 
 import java.util.ArrayList;
 import java.util.Iterator;

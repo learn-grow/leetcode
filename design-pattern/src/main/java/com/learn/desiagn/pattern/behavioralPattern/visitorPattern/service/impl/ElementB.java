@@ -1,7 +1,6 @@
 package com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.impl;
 
 import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.Element;
-import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.Visitor;
 
 /**
  * @author : lisy
