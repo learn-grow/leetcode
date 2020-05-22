@@ -16,6 +16,8 @@
         <module>netty-server</module>
         <module>ioc-overview</module>
         <module>signal-demo</module>
+        <module>demo-test</module>
+        <module>tx-saga</module>
     </modules>
 
     <properties>
