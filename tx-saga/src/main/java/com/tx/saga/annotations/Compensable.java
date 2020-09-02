@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * @author: lisy
  * @version: : Compensable , v0.1 2020年05月22日 10:40 上午
- * @remark: the Compensable is 补偿方法
+ * @remark: the Compensable is 补偿方法注解
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

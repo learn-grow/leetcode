@@ -2,6 +2,8 @@ package com.demo.test.lock.newlock;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author: lisy

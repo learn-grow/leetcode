@@ -12,16 +12,6 @@ import com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service.impl.V
 public class VisitorClient {
 
     public static void main(String args[]){
-        ObjectStructure objectStructure = new ObjectStructure();
-        objectStructure.add(new ElementA());
-        objectStructure.add(new ElementB());
-        Visitor visitor = new VisitorA();
-        objectStructure.accept(visitor);
 
-        System.out.println("------------");
-
-        visitor = new Visitorb();
-
-        objectStructure.accept(visitor);
     }
 }

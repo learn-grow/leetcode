@@ -1,0 +1,5 @@
+features:
+  key: call_newapi_getUserById
+  enable : true
+  #可以定义不同的规则
+  rule : {123 , 456}

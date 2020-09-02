@@ -7,5 +7,5 @@ package com.learn.desiagn.pattern.behavioralPattern.visitorPattern.service;
  */
 public interface Element {
 
-    void accept(Visitor visitor);
+
 }

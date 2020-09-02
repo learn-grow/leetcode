@@ -14,12 +14,6 @@ public class ObjectStructure {
 
     private List<Element> list = new ArrayList<>();
 
-    public void accept(Visitor visitor){
-        Iterator<Element> iterator = list.iterator();
-        while (iterator.hasNext()){
-            iterator.next().accept(visitor);
-        }
-    }
 
 
     public void add(Element element){

@@ -18,6 +18,15 @@
         <module>signal-demo</module>
         <module>demo-test</module>
         <module>tx-saga</module>
+        <module>zk-demo</module>
+        <module>raft-demo</module>
+        <module>service-discovery-register</module>
+        <module>demo-one</module>
+        <module>solution</module>
+        <module>thread</module>
+        <module>jvm-demo</module>
+        <module>spring-cloud-demo</module>
+        <module>Eureka-server</module>
     </modules>
 
     <properties>
